@@ -30,15 +30,34 @@
 			#sidebar {
 				background-color: #5C4033 !important; /* Dark brown */
 				color: #f2f2f2 !important; /* Off-white text */
+				text-align: center;
+			}
+
+			#sidebar .inner {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			#sidebar nav ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			#sidebar nav ul li {
+				margin: 0.5em 0;
 			}
 
 			#sidebar a {
-				color: white !important;
+				color: #f2f2f2 !important;
 				text-decoration: none !important;
 				border-bottom: 1px solid #f2f2f2 !important;
 				padding: 0.5em 1em;
 				display: inline-block;
 				transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+				border-radius: 0;
+				text-align: center;
 			}
 
 			#sidebar a:hover,
@@ -46,7 +65,7 @@
 				background-color: chocolate !important;
 				color: whitesmoke !important;
 				border-bottom: 1px solid #3e2b20 !important;
-				border-radius: 12px !important; /* Rounded corners on hover/active */
+				border-radius: 12px !important;
 			}
 
 
