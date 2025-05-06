@@ -19,9 +19,8 @@
 			color: black;
 		}
 		h1, h2, strong {
-			color: #5C4033; /* Dark brown headings and emphasis */
+			color: #5C4033; /* Dark brown */
 		}
-		ul.menu li,
 		a {
 			color: black;
 		}
@@ -36,13 +35,31 @@
 			margin-bottom: 0.5rem;
 		}
 		#wrapper {
-			background-color: rgba(255, 248, 220, 0.95); /* blanchedalmond with slight transparency */
+			background-color: rgba(255, 248, 220, 0.95);
 			border-radius: 12px;
 			padding: 2rem;
 		}
 		#footer.wrapper.alt {
 			background-color: #f2f2f2;
 			color: black;
+		}
+		/* Sticky Header */
+		#header {
+			position: sticky;
+			top: 0;
+			background-color: #f2f2f2;
+			padding: 1rem 2rem;
+			z-index: 999;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+		}
+		#header .title {
+			color: #5C4033;
+			font-weight: bold;
+			font-size: 1.3rem;
+		}
+		#header nav ul {
+			display: flex;
+			gap: 1rem;
 		}
 	</style>
 </head>
@@ -76,27 +93,27 @@
 
 				<h2>Coffee & Espresso</h2>
 				<ul>
-					<li><strong>Espresso</strong> – Rich and bold, served straight or with a splash of milk.</li>
-					<li><strong>Americano</strong> – Smooth espresso with hot water for a clean finish.</li>
-					<li><strong>Cappuccino</strong> – Espresso with steamed milk and a foamy top.</li>
-					<li><strong>Latte</strong> – Creamy and comforting with optional flavors (vanilla, caramel, mocha).</li>
-					<li><strong>Cold Brew</strong> – Slow-steeped and served over ice, strong yet smooth.</li>
+					<li><strong>Espresso</strong> – $2.50</li>
+					<li><strong>Americano</strong> – $3.00</li>
+					<li><strong>Cappuccino</strong> – $3.75</li>
+					<li><strong>Latte</strong> – $4.00 (Add flavor +$0.50)</li>
+					<li><strong>Cold Brew</strong> – $4.25</li>
 				</ul>
 
 				<h2>Teas & Refreshers</h2>
 				<ul>
-					<li><strong>Chai Latte</strong> – Spiced black tea with steamed milk and honey.</li>
-					<li><strong>Herbal Tea</strong> – A selection of calming blends: mint, chamomile, and hibiscus.</li>
-					<li><strong>Iced Hibiscus Lemonade</strong> – Tart and floral, perfect for a sunny day.</li>
+					<li><strong>Chai Latte</strong> – $3.50</li>
+					<li><strong>Herbal Tea</strong> – $2.75</li>
+					<li><strong>Iced Hibiscus Lemonade</strong> – $3.25</li>
 				</ul>
 
 				<h2>Bakery & Bites</h2>
 				<ul>
-					<li><strong>Butter Croissant</strong> – Flaky, golden, and fresh out of the oven.</li>
-					<li><strong>Coffee Cake</strong> – Cinnamon-swirled and crumb-topped, pairs perfectly with your brew.</li>
-					<li><strong>Bagel with Cream Cheese</strong> – Toasted to your liking, simple and satisfying.</li>
-					<li><strong>Avocado Toast</strong> – Sourdough, smashed avocado, red chili flakes, and a drizzle of olive oil.</li>
-					<li><strong>Breakfast Sandwich</strong> – Egg, cheese, and your choice of bacon or sausage on a fresh roll.</li>
+					<li><strong>Butter Croissant</strong> – $3.25</li>
+					<li><strong>Coffee Cake</strong> – $3.50</li>
+					<li><strong>Bagel with Cream Cheese</strong> – $3.00</li>
+					<li><strong>Avocado Toast</strong> – $6.00</li>
+					<li><strong>Breakfast Sandwich</strong> – $6.75</li>
 				</ul>
 
 				<p><em>All items available Monday–Friday from 7 AM to 1 PM</em></p>
@@ -117,12 +134,5 @@
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+	<script
 
-</body>
-</html>
