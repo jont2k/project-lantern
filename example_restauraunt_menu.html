@@ -51,27 +51,37 @@
 			padding: 1rem 2rem;
 			z-index: 999;
 			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 		}
+
 		#header .title {
 			color: #5C4033;
 			font-weight: bold;
 			font-size: 1.3rem;
+			text-decoration: none;
 		}
+
 		#header nav ul {
 			display: flex;
 			gap: 1rem;
+			list-style: none;
+			margin: 0;
+			padding: 0;
 		}
 
-		/* NEW: Nav link styling */
 		#header nav a {
 			color: #5C4033 !important;
 			text-decoration: none;
 			font-weight: 500;
 		}
+
 		#header nav a:hover,
 		#header nav a.active {
-			color: #3e2b20 !important; /* Slightly darker brown on hover/active */
+			color: #3e2b20 !important;
 		}
+
 
 	</style>
 </head>
