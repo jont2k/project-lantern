@@ -58,10 +58,21 @@
 			font-size: 1.3rem;
 		}
 		#header nav ul {
-			color:#5C4033;
 			display: flex;
 			gap: 1rem;
 		}
+
+		/* NEW: Nav link styling */
+		#header nav a {
+			color: #5C4033 !important;
+			text-decoration: none;
+			font-weight: 500;
+		}
+		#header nav a:hover,
+		#header nav a.active {
+			color: #3e2b20 !important; /* Slightly darker brown on hover/active */
+		}
+
 	</style>
 </head>
 <body class="is-preload">
