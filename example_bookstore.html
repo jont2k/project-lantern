@@ -1,365 +1,301 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Project Lantern Web Restaurant Mockup</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+	<title>Project Lantern Web Solutions - Bookstore Mock-Up</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		body, #wrapper, .wrapper {
+			background-color: #fdf6e3 !important;
+			color: #111 !important;
+		}
+		h1, h2, h3, h4, h5, h6, a, strong {
+			color: #111 !important;
+		}
+		a:hover {
+			color: #333 !important;
+		}
+		#sidebar {
+			background-color: #3e2b23 !important;
+			color: #f2f2f2 !important;
+			text-align: center;
+		}
+		#sidebar .inner {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		#sidebar nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		#sidebar nav ul li {
+			margin: 0.5em 0;
+		}
+		#sidebar a {
+			color: #f2f2f2 !important;
+			text-decoration: none !important;
+			border-bottom: 1px solid #f2f2f2 !important;
+			padding: 0.5em 1em;
+			display: inline-block;
+			transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+			border-radius: 0;
+			text-align: center;
+		}
+		#sidebar a:hover, #sidebar a.active {
+			background-color: #8b4513 !important;
+			color: whitesmoke !important;
+			border-bottom: 1px solid #5e3d2b !important;
+			border-radius: 12px !important;
+		}
+		.sidebar-desc {
+			font-size: 0.85em;
+			color: #d9d9d9;
+			margin: 0.2em 0 0.8em;
+			text-align: center;
+		}
+		.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+			background-color: #3e2b23 !important;
+			color: #f2f2f2 !important;
+			border: none !important;
+		}
+		.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+			background-color: #2c1c14 !important;
+			color: white !important;
+		}
+		input[type="text"], input[type="email"], textarea {
+			color: black !important;
+			background-color: #fffaf0 !important;
+			border: 1px solid #5C4033 !important;
+			padding: 0.75rem;
+			border-radius: 4px;
+		}
+		label {
+			color: black !important;
+		}
+		#intro {
+			background: linear-gradient(to right, rgba(253, 246, 227, 0.95) 60%, rgba(253, 246, 227, 0.1) 100%),
+						url('images/bookshelf.jpg') right center no-repeat;
+			background-size: cover;
+			color: black;
+		}
+		#footer {
+			color: black !important;
+		}
+		#footer a {
+			color: black !important;
+		}
+	</style>		
+</head>
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Project Lantern - Restaurant Mockup</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="product_page.html">Generic</a></li>
-						<li><a href="gallery.html"  class="active">Gallery</a></li>
-						
-					</ul>
-				</nav>
-			</header>
+<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li>
+						<a href="#intro">Welcome</a>
+						<p class="sidebar-desc">Begin your story here</p>
+					</li>
+					<li>
+						<a href="#one">Our Bookstore</a>
+						<p class="sidebar-desc">Discover who we are</p>
+					</li>
+					<li>
+						<a href="#two">What We Offer</a>
+						<p class="sidebar-desc">Explore our shelves</p>
+					</li>
+					<li>
+						<a href="#three">Get in Touch</a>
+						<p class="sidebar-desc">Let’s connect</p>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Elements</h1>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<!-- Text -->
-								<section>
-									<h2>Text</h2>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<hr />
-									<h3>Blockquote</h3>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h3>Preformatted</h3>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-							<!-- Lists -->
-								<section>
-									<h2>Lists</h2>
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<h3>Unordered</h3>
-											<ul>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis adipiscing.</li>
-												<li>Felis enim feugiat.</li>
-											</ul>
-											<h3>Alternate</h3>
-											<ul class="alt">
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis adipiscing.</li>
-												<li>Felis enim feugiat.</li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-medium">
-											<h3>Ordered</h3>
-											<ol>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis viverra.</li>
-												<li>Felis enim feugiat.</li>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis lorem.</li>
-												<li>Felis enim et feugiat.</li>
-											</ol>
-											<h3>Icons</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-											</ul>
-										</div>
-									</div>
-									<h2>Actions</h2>
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<ul class="actions">
-												<li><a href="#" class="button primary">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-											<ul class="actions small">
-												<li><a href="#" class="button primary small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-medium">
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary fit">Default</a></li>
-												<li><a href="#" class="button fit">Default</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary small fit">Small</a></li>
-												<li><a href="#" class="button small fit">Small</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-							<!-- Table -->
-								<section>
-									<h2>Table</h2>
-									<h3>Default</h3>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h3>Alternate</h3>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-							<!-- Buttons -->
-								<section>
-									<h3>Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions fit">
-										<li><a href="#" class="button primary fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-									</ul>
-									<ul class="actions fit small">
-										<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-upload">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-save">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-							<!-- Form -->
-								<section>
-									<h2>Form</h2>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<select name="demo-category" id="demo-category">
-													<option value="">- Category -</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-normal" name="demo-priority">
-												<label for="demo-priority-normal">Normal</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" value="Send Message" class="primary" /></li>
-													<li><input type="reset" value="Reset" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</section>
-
-							<!-- Image -->
-								<section>
-									<h2>Image</h2>
-									<h3>Fit</h3>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-										</div>
-									</div>
-									<h3>Left &amp; Right</h3>
-									<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									<p><span class="image right"><img src="images/pic06.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-								</section>
-
-						</div>
-					</section>
-
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<h1>Lantern Books</h1>
+				<p>Welcome to <strong>Lantern Books</strong>, your cozy haven for discovering great reads, meeting fellow book lovers, and finding your next literary escape. From bestsellers to hidden gems, our curated collection is here to spark your imagination.</p>
+				<p>Open Monday through Saturday, 9 AM to 7 PM — step into your next favorite story.</p>
+				<ul class="actions">
+					<li><a href="example_bookstore_catalog.html" class="button scrolly">Browse Our Catalog</a></li>
+				</ul>
 			</div>
+		</section>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Project Lantern. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+		<!-- One -->
+		<section id="one" class="wrapper style2 spotlights">
+			<section>
+				<a href="#" class="image"><img src="images/cozy_reading_corner.jpg" alt="Cozy reading corner" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>A Place for Readers</h2>
+						<p>At Lantern Books, we believe every great story deserves a great space. Whether you're looking to lose yourself in a novel or flip through something new with a cup of tea, our reading nooks are always open.</p>
+						<ul class="actions">
+							<li><a href="example_bookstore_catalog.html" class="button">Explore the shelves</a></li>
+						</ul>
+					</div>
 				</div>
-			</footer>
+			</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<section>
+				<a href="#" class="image"><img src="images/staff_picks.jpg" alt="Staff recommendations table" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Our Story</h2>
+						<p>Lantern Books was founded to celebrate the magic of storytelling. We're a community-driven independent bookstore with a passion for helping readers connect with books—and each other. </p>
+						<ul class="actions">
+							<li><a href="example_bookstore_catalog.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
-	</body>
+			<section>
+				<a href="#" class="image"><img src="images/bookclub_event.jpg" alt="Book club event at Lantern Books" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>More Than a Store</h2>
+						<p>Join us for book clubs, author signings, poetry nights, and more. Lantern Books is more than just a bookstore—it’s where book lovers gather and stories come alive.</p>
+						<ul class="actions">
+							<li><a href="example_bookstore_catalog.html" class="button">Upcoming Events</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper style3 fade-up">
+			<div class="inner">
+				<h2>Why Visit Lantern Books?</h2>
+				<p>We’re more than just a bookstore—we’re a community hub for readers, writers, and thinkers. Here's what makes us special:</p>
+				<div class="features">
+					<section>
+						<span class="icon solid major fa-book"></span>
+						<h3>Curated Selection</h3>
+						<p>From modern fiction to timeless classics, we hand-pick titles that spark curiosity and conversation.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-mug-hot"></span>
+						<h3>Cozy Ambience</h3>
+						<p>Settle into a reading chair, sip a drink from our in-store café, and let the world fade away.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-users"></span>
+						<h3>Book Clubs & Events</h3>
+						<p>We host weekly gatherings, discussions, and author talks for every kind of reader.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-feather-alt"></span>
+						<h3>Local Authors</h3>
+						<p>Support indie voices and emerging storytellers—our shelves highlight homegrown talent.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-gift"></span>
+						<h3>Gifts & Stationery</h3>
+						<p>Looking for something unique? We carry journals, pens, puzzles, and perfect gifts for bookworms.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-heart"></span>
+						<h3>Passion-Driven Staff</h3>
+						<p>Our team loves books as much as you do—and we’re always ready to recommend your next favorite read.</p>
+					</section>
+				</div>
+				<ul class="actions">
+					<li><a href="example_bookstore_catalog.html" class="button">Start Browsing</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Three -->
+		<section id="three" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Get in Touch</h2>
+				<p>Looking for a specific book? Want to host an event or schedule a school visit? We’d love to hear from you!</p>
+				<div class="split style1">
+					<section>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Your Name</label>
+									<input type="text" name="name" id="name" placeholder="Jane Doe" />
+								</div>
+								<div class="field half">
+									<label for="email">Email Address</label>
+									<input type="email" name="email" id="email" placeholder="jane@example.com" />
+								</div>
+								<div class="field">
+									<label for="message">How can we help?</label>
+									<textarea name="message" id="message" rows="5" placeholder="Tell us what you're looking for..."></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><button type="submit" class="button submit">Send Message</button></li>
+							</ul>
+						</form>
+					</section>
+					<section>
+						<ul class="contact">
+							<li>
+								<h3>Address</h3>
+								<span>123 Book Lane<br />
+								Phoenix, AZ 85000<br />
+								USA</span>
+							</li>
+							<li>
+								<h3>Email</h3>
+								<a href="#">hello@lanternbooks.com</a>
+							</li>
+							<li>
+								<h3>Phone</h3>
+								<span>(602) 123-4567</span>
+							</li>
+							<li>
+								<h3>Follow Us</h3>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-goodreads"><span class="label">Goodreads</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Lantern Books. All rights reserved.</li><li>Design: <a href="http://html5up.net">Built Upon HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>
