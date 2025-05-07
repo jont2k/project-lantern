@@ -1,337 +1,238 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Project Lantern Web Solutions - Bookstore Mock-Up</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<head>
+	<title>Project Lantern Web Solutions - Bookstore Mock-Up</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		body, #wrapper, .wrapper {
+			background-color: blanchedalmond !important;
+			color: black !important;
+		}
 
-		<style>
-			/* Layout: Sidebar on the right */
-			body {
-				display: flex;
-				flex-direction: row;
-				justify-content: space-between;
-				background-color: blanchedalmond !important;
-				color: black !important;
+		h1, h2, h3, h4, h5, h6,
+		a, strong {
+			color: black !important;
+		}
+
+		a:hover {
+			color: #333 !important;
+		}
+
+		/* Sidebar on Right */
+		#sidebar {
+			position: fixed;
+			right: 0;
+			top: 0;
+			height: 100vh;
+			width: 280px;
+			background-color: #5C4033 !important;
+			color: #f2f2f2 !important;
+			text-align: center;
+			z-index: 1000;
+			overflow-y: auto;
+			transition: right 0.3s ease;
+		}
+
+		#sidebar .inner {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 2rem;
+		}
+
+		#sidebar nav ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		#sidebar nav ul li {
+			margin: 0.5em 0;
+		}
+
+		#sidebar a {
+			color: #f2f2f2 !important;
+			text-decoration: none !important;
+			border-bottom: 1px solid #f2f2f2 !important;
+			padding: 0.5em 1em;
+			display: inline-block;
+			transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+			border-radius: 0;
+			text-align: center;
+		}
+
+		#sidebar a:hover,
+		#sidebar a.active {
+			background-color: chocolate !important;
+			color: whitesmoke !important;
+			border-bottom: 1px solid #3e2b20 !important;
+			border-radius: 12px !important;
+		}
+
+		.sidebar-desc {
+			font-size: 0.85em;
+			color: #d9d9d9;
+			margin: 0.2em 0 0.8em;
+			text-align: center;
+		}
+
+		/* Mobile Toggle Button */
+		#sidebarToggle {
+			display: none;
+			position: fixed;
+			top: 1rem;
+			right: 1rem;
+			z-index: 1100;
+			background-color: #5C4033;
+			color: #fff;
+			border: none;
+			padding: 0.75rem 1rem;
+			font-size: 1.5rem;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		@media screen and (max-width: 980px) {
+			#sidebarToggle {
+				display: block;
 			}
 
-			#wrapper {
-				margin-right: 300px; /* Match sidebar width */
-				flex: 1;
-				width: 100%;
-				box-sizing: border-box;
-			}
-
-			.wrapper {
-				background-color: blanchedalmond !important;
-				color: black !important;
-			}
-
-			h1, h2, h3, h4, h5, h6,
-			a, strong {
-				color: black !important;
-			}
-
-			a:hover {
-				color: #333 !important;
-			}
-
-			/* Sidebar Styles (Right Side) */
 			#sidebar {
-				order: 2;
-				width: 300px;
-				min-width: 260px;
-				height: 100vh;
-				position: fixed;
+				right: -320px;
+			}
+
+			body.sidebar-open #sidebar {
 				right: 0;
-				top: 0;
-				background-color: #5C4033 !important;
-				color: #f2f2f2 !important;
-				text-align: center;
-				z-index: 1000;
-				overflow-y: auto;
 			}
+		}
 
-			#sidebar .inner {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
+		/* Button Styles */
+		.button,
+		button,
+		input[type="submit"],
+		input[type="reset"],
+		input[type="button"] {
+			background-color: #5C4033 !important;
+			color: #f2f2f2 !important;
+			border: none !important;
+		}
 
-			#sidebar nav ul {
-				list-style: none;
-				padding: 0;
-				margin: 0;
-			}
+		.button:hover,
+		button:hover,
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover {
+			background-color: #3e2a1f !important;
+			color: white !important;
+		}
 
-			#sidebar nav ul li {
-				margin: 0.5em 0;
-			}
+		/* Form Fields Styling */
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			color: black !important;
+			background-color: #fffaf0 !important;
+			border: 1px solid #5C4033 !important;
+			padding: 0.75rem;
+			border-radius: 4px;
+		}
 
-			#sidebar a {
-				color: #f2f2f2 !important;
-				text-decoration: none !important;
-				border-bottom: 1px solid #f2f2f2 !important;
-				padding: 0.5em 1em;
-				display: inline-block;
-				transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
-				border-radius: 0;
-				text-align: center;
-			}
+		label {
+			color: black !important;
+		}
 
-			#sidebar a:hover,
-			#sidebar a.active {
-				background-color: chocolate !important;
-				color: whitesmoke !important;
-				border-bottom: 1px solid #3e2b20 !important;
-				border-radius: 12px !important;
-			}
+		#intro {
+			background: linear-gradient(to right, rgba(255, 235, 205, 0.95) 60%, rgba(255, 235, 205, 0.1) 100%), 
+						url('images/coffee_right.jpg') right center no-repeat;
+			background-size: cover;
+			color: black;
+		}
 
-			.sidebar-desc {
-				font-size: 0.85em;
-				color: #d9d9d9;
-				margin: 0.2em 0 0.8em;
-				text-align: center;
-			}
+		#footer {
+			color: black !important;
+		}
 
-			/* Button Styles */
-			.button,
-			button,
-			input[type="submit"],
-			input[type="reset"],
-			input[type="button"] {
-				background-color: #5C4033 !important;
-				color: #f2f2f2 !important;
-				border: none !important;
-			}
+		#footer a {
+			color: black !important;
+		}
+	</style>
+</head>
+<body class="is-preload">
 
-			.button:hover,
-			button:hover,
-			input[type="submit"]:hover,
-			input[type="reset"]:hover,
-			input[type="button"]:hover {
-				background-color: #3e2a1f !important;
-				color: white !important;
-			}
+	<!-- Mobile Toggle Button -->
+	<button id="sidebarToggle" aria-label="Toggle Sidebar">&#9776;</button>
 
-			/* Form Fields Styling */
-			input[type="text"],
-			input[type="email"],
-			textarea {
-				color: black !important;
-				background-color: #fffaf0 !important;
-				border: 1px solid #5C4033 !important;
-				padding: 0.75rem;
-				border-radius: 4px;
-			}
-
-			label {
-				color: black !important;
-			}
-
-			#intro {
-				background: linear-gradient(to right, rgba(255, 235, 205, 0.95) 60%, rgba(255, 235, 205, 0.1) 100%),
-					url('images/coffee_right.jpg') right center no-repeat;
-				background-size: cover;
-				color: black;
-			}
-
-			#footer {
-				color: black !important;
-			}
-
-			#footer a {
-				color: black !important;
-			}
-		</style>
-	</head>
-
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-		<div id="wrapper">
-
-			<!-- Intro -->
-			<section id="intro" class="wrapper style1 fullscreen fade-up">
-				<div class="inner">
-					<h1>Lantern Books</h1>
-					<p>Welcome to <strong>Lantern Books</strong>, your cozy corner for timeless classics, new bestsellers, and literary adventures. Whether you’re a lifelong bookworm or a weekend reader, you’ll find a story to fall in love with here.</p>
-					<p>Open Monday to Friday, 9 AM – 6 PM. Come in, explore, and let your next great read find you.</p>
-					<ul class="actions">
-						<li><a href="example_bookstore_catalog.html" class="button scrolly">Browse Our Catalog</a></li>
-					</ul>
-				</div>
-			</section>
-
-			<!-- One -->
-			<section id="one" class="wrapper style2 spotlights">
-				<section>
-					<a href="#" class="image"><img src="images/bookshelf.jpg" alt="Bookshelf" data-position="center center" /></a>
-					<div class="content">
-						<div class="inner">
-							<h2>Curated Collections</h2>
-							<p>We hand-pick each title with care—from celebrated authors to emerging voices. Whether it’s fiction, poetry, or history, there’s a story here waiting for you.</p>
-							<ul class="actions">
-								<li><a href="example_bookstore_catalog.html" class="button">Discover More</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<a href="#" class="image"><img src="images/reading_nook.jpg" alt="Reading nook" data-position="top center" /></a>
-					<div class="content">
-						<div class="inner">
-							<h2>Our Story</h2>
-							<p>Lantern Books started as a dream to bring stories to life. Now, we’re a hub for readers and writers alike, where pages turn and ideas bloom. Drop in and stay a while.</p>
-							<ul class="actions">
-								<li><a href="example_bookstore_catalog.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<section>
-					<a href="#" class="image"><img src="images/book_display.jpg" alt="Book display" data-position="25% 25%" /></a>
-					<div class="content">
-						<div class="inner">
-							<h2>Events & Signings</h2>
-							<p>Join us for author readings, book clubs, and signings. At Lantern Books, we build community around stories.</p>
-							<ul class="actions">
-								<li><a href="example_bookstore_catalog.html" class="button">See Upcoming Events</a></li>
-							</ul>
-						</div>
-					</div>
-				</section>
-			</section>
-
-			<!-- Two -->
-			<section id="two" class="wrapper style3 fade-up">
-				<div class="inner">
-					<h2>Why Shop With Us?</h2>
-					<p>Lantern Books offers more than a shelf of titles—we offer a warm welcome, thoughtful recommendations, and a deep love for the written word.</p>
-					<div class="features">
-						<section>
-							<span class="icon solid major fa-book"></span>
-							<h3>Diverse Titles</h3>
-							<p>We carry fiction, nonfiction, graphic novels, poetry, and rare finds from voices around the globe.</p>
-						</section>
-						<section>
-							<span class="icon solid major fa-users"></span>
-							<h3>Local Author Spotlight</h3>
-							<p>Support homegrown talent through our dedicated section for Arizona-based writers and poets.</p>
-						</section>
-						<section>
-							<span class="icon solid major fa-heart"></span>
-							<h3>Community-Focused</h3>
-							<p>Our book club, story hours, and writing workshops bring readers together to share what they love.</p>
-						</section>
-						<section>
-							<span class="icon solid major fa-leaf"></span>
-							<h3>Eco-Friendly Reads</h3>
-							<p>We partner with publishers committed to sustainable printing and fair trade practices.</p>
-						</section>
-					</div>
-					<ul class="actions">
-						<li><a href="example_bookstore_catalog.html" class="button">Explore Our Shelves</a></li>
-					</ul>
-				</div>
-			</section>
-
-			<!-- Three -->
-			<section id="three" class="wrapper style1 fade-up">
-				<div class="inner">
-					<h2>Contact Us</h2>
-					<p>Want to check if a book is in stock? Curious about our next event? Just want to say hi? Drop us a note and we’ll get back to you soon!</p>
-					<div class="split style1">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Your Name</label>
-										<input type="text" name="name" id="name" placeholder="Jane Doe" />
-									</div>
-									<div class="field half">
-										<label for="email">Email Address</label>
-										<input type="email" name="email" id="email" placeholder="jane@example.com" />
-									</div>
-									<div class="field">
-										<label for="message">How can we help?</label>
-										<textarea name="message" id="message" rows="5" placeholder="Ask us anything!"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><button type="submit" class="button submit">Send Message</button></li>
-								</ul>
-							</form>
-						</section>
-						<section>
-							<ul class="contact">
-								<li>
-									<h3>Address</h3>
-									<span>123 Book Street<br />
-									Phoenix, AZ 85000<br />
-									USA</span>
-								</li>
-								<li>
-									<h3>Email</h3>
-									<a href="#">hello@lanternbooks.com</a>
-								</li>
-								<li>
-									<h3>Phone</h3>
-									<span>(000) 123-4567</span>
-								</li>
-								<li>
-									<h3>Follow Us</h3>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-goodreads"><span class="label">Goodreads</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</section>
-					</div>
-				</div>
-			</section>
-
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li>
+						<a href="#intro">Welcome</a>
+						<p class="sidebar-desc">Start your journey here</p>
+					</li>
+					<li>
+						<a href="#one">Who we are</a>
+						<p class="sidebar-desc">Learn more about us</p>
+					</li>
+					<li>
+						<a href="#two">What we do</a>
+						<p class="sidebar-desc">See our offerings</p>
+					</li>
+					<li>
+						<a href="#three">Get in touch</a>
+						<p class="sidebar-desc">Contact us today</p>
+					</li>
+				</ul>
+			</nav>
 		</div>
+	</section>
 
-		<!-- Sidebar (Now on the right) -->
-		<section id="sidebar">
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
-				<nav>
-					<ul>
-						<li><a href="#intro">Welcome</a><p class="sidebar-desc">Discover our world</p></li>
-						<li><a href="#one">About Us</a><p class="sidebar-desc">Our mission & story</p></li>
-						<li><a href="#two">Why Us?</a><p class="sidebar-desc">What makes us unique</p></li>
-						<li><a href="#three">Contact</a><p class="sidebar-desc">Reach out anytime</p></li>
-					</ul>
-				</nav>
+				<h1>Lantern Books</h1>
+				<p>Welcome to <strong>Lantern Books</strong>, your cozy haven for curious minds and bookish hearts. Whether you're hunting down your next great read, attending a local author event, or just browsing with a cup of tea, we’re here to turn pages with you.</p>
+				<p>We’re open Monday through Saturday, from 10 AM to 6 PM — stop in and stay a while!</p>
+				<ul class="actions">
+					<li><a href="example_book_catalog.html" class="button scrolly">Browse Our Catalog</a></li>
+				</ul>
 			</div>
 		</section>
 
-		<!-- Footer -->
-		<footer id="footer" class="wrapper style1-alt">
-			<div class="inner">
-				<ul class="menu">
-					<li>&copy; Project Lantern. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">Built Upon HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
+		<!-- Additional content like #one, #two, #three can be inserted here (you already have that content) -->
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+	</div>
 
-	</body>
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Project Lantern. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">Built Upon HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script>
+		document.getElementById('sidebarToggle').addEventListener('click', function () {
+			document.body.classList.toggle('sidebar-open');
+		});
+	</script>
+</body>
 </html>
