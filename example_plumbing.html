@@ -1,365 +1,321 @@
 <!DOCTYPE HTML>
 <!--
-	Hyperspace by HTML5 UP
+	Project Lantern Bookstore Mock-Up by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Project Lantern Web Restaurant Mockup</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+	<title>Project Lantern Web Solutions - Plumber Mock-Up</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        body, #wrapper, .wrapper {
+            background-color: #e0f7f4 !important;
+            color: #1e2b2a !important;
+        }
+    
+        h1, h2, h3, h4, h5, h6,
+        a, strong {
+            color: #1e2b2a !important;
+        }
+    
+        a:hover {
+            color: #144c46 !important;
+        }
+    
+        /* Sidebar */
+        #sidebar {
+            background-color: #2c5f5d !important;
+            color: #f0fdfc !important;
+            text-align: center;
+        }
+    
+        #sidebar .inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        #sidebar nav ul li {
+            margin: 0.5em 0;
+        }
+    
+        #sidebar a {
+            color: #f0fdfc !important;
+            text-decoration: none !important;
+            border-bottom: 1px solid #f0fdfc !important;
+            padding: 0.5em 1em;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+            border-radius: 0;
+            text-align: center;
+        }
+    
+        #sidebar a:hover,
+        #sidebar a.active {
+            background-color: #88c9bf !important;
+            color: #1e2b2a !important;
+            border-bottom: 1px solid #144c46 !important;
+            border-radius: 12px !important;
+        }
+    
+        .sidebar-desc {
+            font-size: 0.85em;
+            color: #ccebe6;
+            margin: 0.2em 0 0.8em;
+            text-align: center;
+        }
+    
+        .button,
+        button,
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"] {
+            background-color: #3b7d76 !important;
+            color: #f0fdfc !important;
+            border: none !important;
+        }
+    
+        .button:hover,
+        button:hover,
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        input[type="button"]:hover {
+            background-color: #27514d !important;
+            color: #ffffff !important;
+        }
+    
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            color: #1e2b2a !important;
+            background-color: #ffffff !important;
+            border: 1px solid #3b7d76 !important;
+            padding: 0.75rem;
+            border-radius: 4px;
+        }
+    
+        label {
+            color: #1e2b2a !important;
+        }
+    
+        #intro {
+            background: url('images/morning_coffee.jpg') center center no-repeat;
+            background-size: cover;
+            color: #1e2b2a;
+            position: relative;
+        }
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">Project Lantern - Restaurant Mockup</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="product_page.html">Generic</a></li>
-						<li><a href="gallery.html"  class="active">Gallery</a></li>
-						
-					</ul>
-				</nav>
-			</header>
+        #intro .inner {
+            background-color: rgba(255, 255, 255, 0.85); /* white with 85% opacity */
+            padding: 3em;
+            border-radius: 1em;
+            box-shadow: 0 0 2em rgba(0, 0, 0, 0.1);
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    
+        #footer {
+            color: #1e2b2a !important;
+        }
+    
+        #footer a {
+            color: #1e2b2a !important;
+        }
+    </style>
+    
+</head>
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Elements</h1>
+<body class="is-preload">
 
-							<!-- Text -->
-								<section>
-									<h2>Text</h2>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<hr />
-									<h3>Blockquote</h3>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h3>Preformatted</h3>
-									<pre><code>i = 0;
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Welcome</a><p class="sidebar-desc">Start your story</p></li>
+					<li><a href="#one">About Us</a><p class="sidebar-desc">Who we are</p></li>
+					<li><a href="#two">See where we are</a><p class="sidebar-desc">Explore categories</p></li>
+					<li><a href="#three">Get in Touch</a><p class="sidebar-desc">Ask us anything</p></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-							<!-- Lists -->
-								<section>
-									<h2>Lists</h2>
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<h3>Unordered</h3>
-											<ul>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis adipiscing.</li>
-												<li>Felis enim feugiat.</li>
-											</ul>
-											<h3>Alternate</h3>
-											<ul class="alt">
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis adipiscing.</li>
-												<li>Felis enim feugiat.</li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-medium">
-											<h3>Ordered</h3>
-											<ol>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis viverra.</li>
-												<li>Felis enim feugiat.</li>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis lorem.</li>
-												<li>Felis enim et feugiat.</li>
-											</ol>
-											<h3>Icons</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-											</ul>
-										</div>
-									</div>
-									<h2>Actions</h2>
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<ul class="actions">
-												<li><a href="#" class="button primary">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-											<ul class="actions small">
-												<li><a href="#" class="button primary small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-medium">
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary fit">Default</a></li>
-												<li><a href="#" class="button fit">Default</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary small fit">Small</a></li>
-												<li><a href="#" class="button small fit">Small</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-							<!-- Table -->
-								<section>
-									<h2>Table</h2>
-									<h3>Default</h3>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h3>Alternate</h3>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-							<!-- Buttons -->
-								<section>
-									<h3>Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions fit">
-										<li><a href="#" class="button primary fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-									</ul>
-									<ul class="actions fit small">
-										<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-upload">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-save">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-							<!-- Form -->
-								<section>
-									<h2>Form</h2>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<select name="demo-category" id="demo-category">
-													<option value="">- Category -</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-normal" name="demo-priority">
-												<label for="demo-priority-normal">Normal</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" value="Send Message" class="primary" /></li>
-													<li><input type="reset" value="Reset" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</section>
-
-							<!-- Image -->
-								<section>
-									<h2>Image</h2>
-									<h3>Fit</h3>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-										</div>
-									</div>
-									<h3>Left &amp; Right</h3>
-									<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									<p><span class="image right"><img src="images/pic06.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-								</section>
-
-						</div>
-					</section>
-
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<h1>Lantern Plumbing Co.</h1>
+				<p>Welcome to <strong>Lantern Plumbing</strong>, your trusted local experts for fast, reliable, and honest plumbing services. From leaks and clogs to full installations, we’re here to keep your home or business flowing smoothly.</p>
+				<p>Available 24/7 for emergencies — Call us any time, day or night!</p>
+				<ul class="actions">
+					<li><a href="services.html" class="button scrolly">View Our Services</a></li>
+				</ul>
 			</div>
+		</section>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Project Lantern. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+		<!-- One -->
+		<section id="one" class="wrapper style2 spotlights">
+			<section>
+				<a href="#" class="image"><img src="images/plumber-working.jpg" alt="Plumber fixing a pipe" data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Quality Work You Can Trust</h2>
+						<p>Our licensed and insured team brings years of hands-on experience, delivering dependable results for residential and commercial clients alike.</p>
+						<ul class="actions">
+							<li><a href="services.html" class="button">Learn More</a></li>
+						</ul>
+					</div>
 				</div>
-			</footer>
+			</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<section>
+				<a href="#" class="image"><img src="images/water-heater.jpg" alt="Water heater installation" data-position="top center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>From Repairs to Remodels</h2>
+						<p>Whether it’s a burst pipe or a bathroom upgrade, we handle every job with precision and care. Your satisfaction is our top priority.</p>
+						<ul class="actions">
+							<li><a href="services.html" class="button">Our Solutions</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
-	</body>
+			<section>
+				<a href="#" class="image"><img src="images/emergency-plumbing.jpg" alt="Emergency plumber" data-position="25% 25%" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Emergency Services</h2>
+						<p>Plumbing problems don’t wait — and neither do we. Call Lantern Plumbing Co. for 24/7 emergency support.</p>
+						<ul class="actions">
+							<li><a href="contact.html" class="button">Call Now</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper style3 fade-up">
+			<div class="inner">
+				<h2>Our Core Services</h2>
+				<p>We offer a full range of plumbing solutions to keep your property running efficiently and safely.</p>
+				<div class="features">
+					<section>
+						<span class="icon solid major fa-wrench"></span>
+						<h3>General Repairs</h3>
+						<p>Fixing leaks, drips, and drainage issues quickly and correctly.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-bath"></span>
+						<h3>Bathroom & Kitchen Upgrades</h3>
+						<p>Modernize your fixtures with clean, expert installations.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-fire"></span>
+						<h3>Water Heater Services</h3>
+						<p>Installations, maintenance, and emergency fixes for hot water systems.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-home"></span>
+						<h3>Home Inspections</h3>
+						<p>Reliable pre-purchase plumbing inspections and maintenance assessments.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-tools"></span>
+						<h3>Pipe Replacement</h3>
+						<p>Old or damaged pipes? We replace with durable, modern materials.</p>
+					</section>
+					<section>
+						<span class="icon solid major fa-bolt"></span>
+						<h3>Emergency Services</h3>
+						<p>Fast, 24/7 plumbing help when you need it most.</p>
+					</section>
+				</div>
+				<ul class="actions">
+					<li><a href="services.html" class="button">Explore Full Services</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Three -->
+		<section id="three" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Contact Us</h2>
+				<p>Need immediate help or looking for an estimate? Our team is ready to assist!</p>
+				<div class="split style1">
+					<section>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Your Name</label>
+									<input type="text" name="name" id="name" placeholder="John Smith" />
+								</div>
+								<div class="field half">
+									<label for="email">Email Address</label>
+									<input type="email" name="email" id="email" placeholder="john@example.com" />
+								</div>
+								<div class="field">
+									<label for="message">Your Message</label>
+									<textarea name="message" id="message" rows="5" placeholder="How can we help?"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><button type="submit" class="button submit">Send Message</button></li>
+							</ul>
+						</form>
+					</section>
+					<section>
+						<ul class="contact">
+							<li><h3>Address</h3><span>456 Pipe Street<br/>Mesa, AZ 85001<br/>USA</span></li>
+							<li><h3>Email</h3><a href="#">support@lanternplumbing.com</a></li>
+							<li><h3>Phone</h3><span>(000) 987-6543</span></li>
+							<li>
+								<h3>Social</h3>
+								<ul class="icons">
+									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Lantern Bookshop. All rights reserved.</li>
+				<li>Design based on <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
 </html>
