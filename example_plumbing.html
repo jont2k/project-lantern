@@ -11,25 +11,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
+	<style>
         body, #wrapper, .wrapper {
-            background-color: #e0f7f4 !important;
-            color: #1e2b2a !important;
+            background-color: #f5f5f5 !important; /* Light grey background */
+            color: #333333 !important; /* Dark grey text */
         }
     
         h1, h2, h3, h4, h5, h6,
         a, strong {
-            color: #1e2b2a !important;
+            color: #2b5797 !important; /* Blue text for headings and links */
         }
     
         a:hover {
-            color: #144c46 !important;
+            color: #1e3c6a !important; /* Darker blue on hover */
         }
     
         /* Sidebar */
         #sidebar {
-            background-color: #2c5f5d !important;
-            color: #f0fdfc !important;
+            background-color: #2b5797 !important; /* Blue sidebar */
+            color: #ffffff !important;
             text-align: center;
         }
     
@@ -50,9 +50,9 @@
         }
     
         #sidebar a {
-            color: #f0fdfc !important;
+            color: #ffffff !important;
             text-decoration: none !important;
-            border-bottom: 1px solid #f0fdfc !important;
+            border-bottom: 1px solid #ffffff !important;
             padding: 0.5em 1em;
             display: inline-block;
             transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
@@ -62,15 +62,15 @@
     
         #sidebar a:hover,
         #sidebar a.active {
-            background-color: #88c9bf !important;
-            color: #1e2b2a !important;
-            border-bottom: 1px solid #144c46 !important;
+            background-color: #ff8c1a !important; /* Orange highlight */
+            color: #ffffff !important;
+            border-bottom: 1px solid #ff8c1a !important;
             border-radius: 12px !important;
         }
     
         .sidebar-desc {
             font-size: 0.85em;
-            color: #ccebe6;
+            color: #d9d9d9;
             margin: 0.2em 0 0.8em;
             text-align: center;
         }
@@ -80,8 +80,8 @@
         input[type="submit"],
         input[type="reset"],
         input[type="button"] {
-            background-color: #3b7d76 !important;
-            color: #f0fdfc !important;
+            background-color: #ff8c1a !important; /* Orange buttons */
+            color: #ffffff !important;
             border: none !important;
         }
     
@@ -90,45 +90,78 @@
         input[type="submit"]:hover,
         input[type="reset"]:hover,
         input[type="button"]:hover {
-            background-color: #27514d !important;
+            background-color: #e67300 !important; /* Darker orange on hover */
             color: #ffffff !important;
         }
     
         input[type="text"],
         input[type="email"],
         textarea {
-            color: #1e2b2a !important;
+            color: #333333 !important;
             background-color: #ffffff !important;
-            border: 1px solid #3b7d76 !important;
+            border: 1px solid #b3b3b3 !important; /* Grey border */
             padding: 0.75rem;
             border-radius: 4px;
         }
     
         label {
-            color: #1e2b2a !important;
+            color: #333333 !important;
         }
     
         #intro {
-            background: url('images/morning_coffee.jpg') center center no-repeat;
-            background-size: cover;
-            color: #1e2b2a;
+            background-color: #e6e6e6 !important; /* Lighter grey for intro section */
+            color: #333333;
             position: relative;
         }
 
         #intro .inner {
-            background-color: rgba(255, 255, 255, 0.85); /* white with 85% opacity */
+            background-color: rgba(255, 255, 255, 0.85);
             padding: 3em;
             border-radius: 1em;
             box-shadow: 0 0 2em rgba(0, 0, 0, 0.1);
         }
-
     
         #footer {
-            color: #1e2b2a !important;
+            color: #666666 !important; /* Medium grey for footer */
         }
     
         #footer a {
-            color: #1e2b2a !important;
+            color: #2b5797 !important; /* Blue links in footer */
+        }
+        
+        /* Section styling */
+        .wrapper.style1 {
+            background-color: #f5f5f5 !important; /* Light grey */
+        }
+        
+        .wrapper.style2 {
+            background-color: #e6e6e6 !important; /* Slightly darker grey */
+        }
+        
+        .wrapper.style3 {
+            background-color: #2b5797 !important; /* Blue */
+            color: #ffffff !important;
+        }
+        
+        .wrapper.style3 h2, 
+        .wrapper.style3 h3, 
+        .wrapper.style3 p {
+            color: #ffffff !important;
+        }
+        
+        .wrapper.style1-alt {
+            background-color: #d9d9d9 !important; /* Another grey variation */
+        }
+        
+        /* Icon styling */
+        .icon.major {
+            background-color: #ff8c1a !important; /* Orange icons */
+            color: #ffffff !important;
+        }
+        
+        .icon.solid.major {
+            background-color: #ff8c1a !important; /* Orange icons */
+            color: #ffffff !important;
         }
     </style>
     
