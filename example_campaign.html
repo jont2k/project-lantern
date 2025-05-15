@@ -1,0 +1,386 @@
+<!DOCTYPE HTML>
+<!--
+	Campaign Vision | A Platform for Change
+-->
+<html>
+	<head>
+		<title>Jane Doe | Political Campaign</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+        body, #wrapper, .wrapper {
+            background-color: #ffffff !important; /* White background */
+            color: #333333 !important; /* Dark text */
+        }
+    
+        h1, h2, h3, h4, h5, h6,
+        a, strong {
+            color: #0c2e8a !important; /* Deeper blue text for headings and links */
+        }
+    
+        a:hover {
+            color: #c41230 !important; /* Red on hover */
+        }
+		/* Header */
+		#header {
+			background-color: lightgray !important;
+			color: #ffffff !important;
+			text-align: center;
+		}
+
+		#header a,
+		#header a:hover,
+		#header nav ul li a {
+			color: #0c2e8a !important;
+		}
+    
+        /* Sidebar */
+        #sidebar {
+            background-color: #0c2e8a !important; /* Deep blue sidebar */
+            color: #ffffff !important;
+            text-align: center;
+        }
+    
+        #sidebar .inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        #sidebar nav ul li {
+            margin: 0.5em 0;
+        }
+    
+        #sidebar a {
+            color: #ffffff !important;
+            text-decoration: none !important;
+            border-bottom: 1px solid #ffffff !important;
+            padding: 0.5em 1em;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s, border-radius 0.3s;
+            border-radius: 0;
+            text-align: center;
+        }
+    
+        #sidebar a:hover,
+        #sidebar a.active {
+            background-color: #c41230 !important; /* Red highlight */
+            color: #ffffff !important;
+            border-bottom: 1px solid #c41230 !important;
+            border-radius: 12px !important;
+        }
+    
+        .sidebar-desc {
+            font-size: 0.85em;
+            color: #d9d9d9;
+            margin: 0.2em 0 0.8em;
+            text-align: center;
+        }
+    
+        .button,
+        button,
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"] {
+            background-color: #c41230 !important; /* Red buttons */
+            color: #ffffff !important;
+            border: none !important;
+        }
+    
+        .button:hover,
+        button:hover,
+        input[type="submit"]:hover,
+        input[type="reset"]:hover,
+        input[type="button"]:hover {
+            background-color: #a30f28 !important; /* Darker red on hover */
+            color: #ffffff !important;
+        }
+    
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            color: #333333 !important;
+            background-color: #ffffff !important;
+            border: 1px solid #0c2e8a !important; /* Blue border */
+            padding: 0.75rem;
+            border-radius: 4px;
+        }
+    
+        label {
+            color: #333333 !important;
+        }
+    
+        #intro {
+			background: linear-gradient(to right, white 20%, rgba(255, 235, 205, 0.1) 100%), 
+						url('images/gemini_flag.png') right center no-repeat;
+			background-size: cover;
+			color: grey;
+			}
+			#intro .inner {
+            background-color: rgba(255, 255, 255, 0.85); /* white with 85% opacity */
+            padding: 3em;
+            border-radius: 1em;
+            box-shadow: 0 0 2em rgba(0, 0, 0, 0.1);
+        }
+    
+        #footer {
+            color: #333333 !important;
+            background-color: #f8f9fa !important; /* Light blue-gray footer */
+        }
+    
+        #footer a {
+            color: #0c2e8a !important; /* Blue links in footer */
+        }
+        
+        /* Section styling */
+        .wrapper.style1 {
+            background-color: #ffffff !important; /* White */
+        }
+        
+        .wrapper.style2 {
+            background-color: #f8f9fa !important; /* Light blue-gray */
+        }
+        
+        .wrapper.style3 {
+            background-color: #0c2e8a !important; /* Deep blue */
+            color: #ffffff !important;
+        }
+        
+        .wrapper.style3 h2, 
+        .wrapper.style3 h3, 
+        .wrapper.style3 p {
+            color: #ffffff !important;
+        }
+        
+        .wrapper.style1-alt {
+            background-color: #e9ecef !important; /* Slightly darker blue-gray */
+        }
+        
+        /* Icon styling */
+        .icon.major {
+            background-color: #c41230 !important; /* Red icons */
+            color: #ffffff !important;
+        }
+        
+        .icon.solid.major {
+            background-color: #c41230 !important; /* Red icons */
+            color: #ffffff !important;
+        }
+    </style>
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+		<header id="header">
+			<a href="example_campaign.html" class="title">Jane Doe - Campaign Home</a>
+			<nav>
+				<ul>
+					<li><a href="example_campaign.html" class="active">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="generic.html">Our Promises</a></li>
+					<li><a href="elements.html">Events</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Sidebar 
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Our Campaign</a></li>
+							<li><a href="#two">Key Issues</a></li>
+							<li><a href="#three">Join Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			-->
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Jane Doe - For Mayor</h1>
+							<p>We're building a movement for change that puts people first. Through community-focused policies and grassroots organizing, we're working to create a brighter future for our district. Join us as we fight for affordable healthcare, quality education, and economic opportunity for all.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="/api/placeholder/400/320" alt="Candidate speaking with constituents" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Meet Your Candidate</h2>
+									<p>A lifelong resident of this district with 20 years of public service, our candidate understands the challenges we face and has the experience to deliver real results for our community.</p>
+									<ul class="actions">
+										<li><a href="candidate_bio.html" class="button">Learn More</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="/api/placeholder/400/320" alt="Campaign team at a community event" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Our Vision</h2>
+									<p>We believe in a future where everyone has access to affordable healthcare, quality education, and economic opportunity. Our campaign is fighting for common-sense solutions to the real problems facing our community, with a focus on transparency, accountability, and listening to all voices.</p>
+									<ul class="actions">
+										<li><a href="platform.html" class="button">Our Platform</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="/api/placeholder/400/320" alt="Volunteer phone banking" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Ready to make a difference?</h2>
+										<p>Every door knocked, call made, and dollar donated brings us closer to victory. Join our grassroots movement today!</p>
+									<ul class="actions">
+										<li><a href="#three" class="button">Get Involved</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Key Issues</h2>
+							<p>Our campaign is focused on addressing the issues that matter most to our community.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-heartbeat"></span>
+									<h3>Healthcare For All</h3>
+									<p>We're fighting for a healthcare system that works for everyone, not just the wealthy and well-connected. Our plan ensures quality, affordable healthcare access for every family in our district.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-graduation-cap"></span>
+									<h3>Education Investment</h3>
+									<p>Our children deserve world-class schools with well-paid teachers and modern resources. We're committed to investing in education from pre-K through college and vocational training.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-leaf"></span>
+									<h3>Environmental Protection</h3>
+									<p>Climate change demands bold action. Our comprehensive plan will create green jobs while protecting our natural resources for future generations.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-building"></span>
+									<h3>Economic Opportunity</h3>
+									<p>We're working to build an economy that works for everyone, with family-sustaining jobs, support for small businesses, and investments in our infrastructure.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-shield-alt"></span>
+									<h3>Community Safety</h3>
+									<p>Every neighborhood deserves to be safe. We support common-sense reforms and community-based solutions that build trust and protect everyone.</p>
+								</section>
+								<section>
+									<span class="icon major fa-home"></span>
+									<h3>Affordable Housing</h3>
+									<p>Everyone deserves a safe, affordable place to call home. Our housing policy will address skyrocketing costs and expand access to quality housing for all.
+									</p>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="policy_details.html" class="button">Full Policy Platform</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Join Our Movement</h2>
+							<p>This campaign is powered by people like you. Get involved today and help us build a better future for our community!</p>							
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">How would you like to help?</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Sign Up</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Campaign Headquarters</h3>
+											<span>123 Main Street, Suite 100<br />
+											Springfield, ST 12345<br />
+											USA</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">info@visionfortomorrow.org</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(555) 123-4567</span>
+										</li>
+										<li>
+											<h3>Connect With Us</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+												<li><a href="#" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Vision For Tomorrow Campaign. All rights reserved.</li><li>Paid for by the Committee to Elect Vision For Tomorrow</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

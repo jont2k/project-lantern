@@ -1,45 +1,33 @@
-﻿Responsive HTML5 Template
-
-Everest Corporate Business bootstrap template is a multi-purpose clean html5 template built with valid HTML5 & CSS3. The design is very flat and modern look, full-fill with latest standards, It's based on latest Bootstrap framework 3.3.1 fully responsive web compatible with multi browser and devices. This template can be used for multi-purpose needs also like business, consultancy, agency, personal portfolio, profile, mobile website and start-up company.
-
-Key features
--------------
-Twitter Bootstrap 3.3.1
-Clean & Developer-friendly HTML5 and CSS3 code
-100% Responsive Layout Design 
-Multi-purpose theme
-Google Fonts Support
-Font Awesome 
-Smooth Scrolling 
-Fully Customizable
-Contact Form
+Hyperspace by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-Credits :
--------
-=> Design and developed: "WebThemez"  http://webthemez.com
-=> Photos used in template: **Unsplash** - http://unsplash.com, http://risewall.com/home-business-team-wallpapers.html, http://www.freestockphotos.name/
-=> For more free web themes: http://webthemez.com
-=> Framework : http://getbootstrap.com
+So I've had the wireframe for this particular design kicking around for some time, but with all
+the other interesting (and in some cases, semi-secret) projects I've been working on it took me
+a little while to get to actually designing and coding it. Fortunately, things have eased up
+enough for me to finaly get around to it, so I'm happy to introduce Hyperspace: a fun, blocky,
+one-page design with a lot of color, a bit of animation, and an additional "generic" page template
+(because hey, even one-page sites usually need an interior page or two). Hope you dig it :)
 
-Important Note:
----------------
-To remove backlink from the template, you need to donate to remove the backlink from the template.
-Any question contact us: webthemez@gmail.com
+Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
+you can use for pretty much whatever.
+
+(* = not included)
+
+AJ
+aj@lkn.io | @ajlkn
 
 
-License :
--------
-**Creative Commons Attribution 3.0** - http://creativecommons.org/licenses/by/3.0/
+Credits:
 
-- You are allowed to use all files for both personal and commercial projects.
+	Demo Images:
+		Unsplash (unsplash.com)
 
-- If you use/modify the resources in your projects,we’d appreciate a linkback to this site.
+	Icons:
+		Font Awesome (fontawesome.io)
 
-- You do not have rights to redistribute,resell or offer files from this site to any third party
-
-- If you wish to remove backlink from the template, you need to donate min USD $10 to remove backlink (credits) form the template
-
-- If you have any question,feel free to contact us at webthemez@gmail.com
-
-- All images user here is for demo purpose only, we are not responsible for any copyrights.
+	Other:
+		jQuery (jquery.com)
+		Scrollex (github.com/ajlkn/jquery.scrollex)
+		Responsive Tools (github.com/ajlkn/responsive-tools)
