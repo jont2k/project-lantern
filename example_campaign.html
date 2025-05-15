@@ -25,15 +25,32 @@
         }
 		/* Header */
 		#header {
-			background-color: lightgray !important;
-			color: #ffffff !important;
-			text-align: center;
+		background-color: #2196F3 !important; /* Bright blue background */
+		color: #ffffff !important;
+		text-align: center;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+		transition: all 0.3s ease; /* Smooth transition for hover effects */
+		}
+
+		#header:hover {
+		transform: translateY(-3px); /* Slight lift on hover */
+		box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+		background-color: #1e88e5 !important; /* Slightly darker blue on hover */
 		}
 
 		#header a,
-		#header a:hover,
 		#header nav ul li a {
-			color: #0c2e8a !important;
+		color: #ffffff !important; /* White text for better contrast */
+		font-weight: 600; /* Make text slightly bolder */
+		transition: all 0.2s ease; /* Smooth transition for link hovers */
+		}
+
+		#header a:hover,
+		#header nav ul li a:hover {
+		color: #ffeb3b !important; /* Bright yellow on hover */
+		text-shadow: 0 0 5px rgba(255,255,255,0.5); /* Subtle glow effect */
+		transform: scale(1.05); /* Slightly enlarge text */
+		display: inline-block; /* Required for the transform to work */
 		}
     
         /* Sidebar */
