@@ -30,6 +30,11 @@
 		text-align: center;
 		box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 		transition: all 0.3s ease; /* Smooth transition for hover effects */
+		position: fixed; /* Make the header fixed to the top */
+		top: 0; /* Stick it to the top of the viewport */
+		left: 0; /* Extend to the left edge */
+		width: 100%; /* Make it full width */
+		z-index: 1000; /* Ensure it stays on top of other content */
 		}
 
 		#header:hover {
@@ -43,6 +48,21 @@
 		color: #ffffff !important; /* White text for better contrast */
 		font-weight: 600; /* Make text slightly bolder */
 		transition: all 0.2s ease; /* Smooth transition for link hovers */
+		text-decoration: none; /* Remove underlines from links */
+		padding: 15px 20px; /* Add some padding for better touch targets */
+		display: inline-block; /* Allows padding and margin to work correctly */
+		}
+
+		#header nav ul {
+		list-style: none; /* Remove bullet points from the list */
+		padding: 0;
+		margin: 0;
+		display: inline-block; /* Align the list items horizontally */
+		}
+
+		#header nav ul li {
+		display: inline; /* Make list items appear in a line */
+		margin: 0 10px; /* Add some spacing between list items */
 		}
 
 		#header a:hover,
@@ -50,7 +70,6 @@
 		color: #ffeb3b !important; /* Bright yellow on hover */
 		text-shadow: 0 0 5px rgba(255,255,255,0.5); /* Subtle glow effect */
 		transform: scale(1.05); /* Slightly enlarge text */
-		display: inline-block; /* Required for the transform to work */
 		}
     
         /* Sidebar */
