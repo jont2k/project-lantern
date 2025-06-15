@@ -133,6 +133,21 @@
 											<li><button type="submit" class="button submit">Send Message</button></li>
 										</ul>
 									</form>
+									<!-- Email Form Handler Script -->
+										<script>
+										document.getElementById('contactForm').addEventListener('submit', function(e) {
+											e.preventDefault();
+											
+											const name = document.getElementById('name').value;
+											const email = document.getElementById('email').value;
+											const message = document.getElementById('message').value;
+											
+											const subject = `Contact Form Message from ${name}`;
+											const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+											
+											window.location.href = `mailto:jonathan.a.ton@outlook.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+										});
+									</script>
 								</section>
 								<section> <!-- Reminder to update when finishing-->
 									<ul class="contact">
@@ -215,20 +230,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-		<!-- Email Form Handler Script -->
-			<script>
-			document.getElementById('contactForm').addEventListener('submit', function(e) {
-				e.preventDefault();
-				
-				const name = document.getElementById('name').value;
-				const email = document.getElementById('email').value;
-				const message = document.getElementById('message').value;
-				
-				const subject = `Contact Form Message from ${name}`;
-				const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-				
-				window.location.href = `mailto:jonathan.a.ton@outlook.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-			});
-		</script>
 	</body>
 </html>
